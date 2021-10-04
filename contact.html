@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>univerdity website</title>
+    <!-- render all elements normally -->
+    <link rel="stylesheet" href="css/normalise.css"/>
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <!-- main template css file -->
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <!-- start header -->
+    <header class="sub-header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONATCT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <section class="text-box">
+                <h1>Contact Us</h1>
+        </div>
+    </header>
+    <!-- end header -->
+
+
+    <!--start location-->
+    <section class="location">
+        <div class="container">
+            <!--The div element for the map -->
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102137.5018544816!2d3.8403677434424344!3d36.87127918308847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128de7c42f144ab1%3A0xa88d33ccee4c3fd3!2sDellys!5e0!3m2!1sfr!2sdz!4v1633377157355!5m2!1sfr!2sdz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <!--end location-->
+    
+    <!--start contact content-->
+    <section class="con-tact">
+        <div class="container">
+            <div class="content">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <h4>Xyz Road, Abc Building</h4>
+                    <p>Bangalore, Karnataka, IN</p>
+                </div>
+                <div>
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>+1 0123456789</h4>
+                    <p>Monday to Saturday 10 Am to 6 Pm</p>
+                </div>
+                <div>
+                    <i class="far fa-envelope"></i>
+                    <h4>info@nadjibprodev.com</h4>
+                    <p>Email us your query</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="form">
+                <form>
+                    <input type="text" placeholder="Enter your name">
+                    <input type="text" placeholder="Enter email adress">
+                    <input type="text" placeholder="Enter your subject">
+                    <textarea placeholder="Message"></textarea>
+                </form>
+                <a href="mailto:nadjibmouhoun1@gmail.com" class="btn">Send Message</a>
+            </div>
+        </div>
+    </section>
+    <!--end contact content-->
+
+    <!-- start footer -->
+    <footer class="about-us">
+        <div class="container">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim id error quos a laborum harum rem doloremque,<br>fuga quod reiciendis fugiat officia vitae minus corrupti quisquam.</p>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <p>made with <i class="far fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </footer>
+    <!-- end about us -->
+
+
+
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+</body>
+</html>
