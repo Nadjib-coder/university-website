@@ -2,6 +2,7 @@
 :root {
     --main-color:#f44336;
     --paragrah-color: #FFF;
+    --main-padding: 3% 0 3%;
 }
 /*end variable*/
 
@@ -18,7 +19,6 @@ html {
 }
 body {
     font-family: 'Open Sans', sans-serif;
-    overflow-x: hidden;
 }
 ul {
     list-style: none;
@@ -152,12 +152,8 @@ header .fas {
     header .text-box h1 {
         font-size: 30px;
     }
-    header nav .links ul li {
-        display: block;
-        padding: 8px;
-    }
     header nav .links {
-        position: absolute;
+        position: fixed;
         background-color: var(--main-color);
         height: 100vh;
         width: 200px;
@@ -166,6 +162,10 @@ header .fas {
         text-align: left;
         z-index: 2;
         transition: 0.5s;
+    }
+    header nav .links ul li {
+        display: block;
+        padding: 8px;
     }
     header .fas {
         display: block;
@@ -183,7 +183,7 @@ header .fas {
 /*start course*/
 .course {
     background-color: #FFF;
-    padding: 3% 0 3%;
+    padding: var(--main-padding);
     text-align: center;
 }
 .course h1 {
@@ -225,7 +225,7 @@ header .fas {
 /*start campus*/
 .campus {
     background-color: #FFF;
-    padding: 2% 0 5%;
+    padding: var(--main-padding);
     text-align: center;
 }
 .campus h1 {
@@ -289,7 +289,7 @@ header .fas {
 /*start our facilities*/
 .facilities {
     background-color: #FFF;
-    padding: 3% 0 3%;
+    padding: var(--main-padding);
     text-align: center;
 }
 .facilities h1 {
@@ -314,7 +314,7 @@ header .fas {
 }
 .fac-col img {
     width: 100%;
-    border-radius: 10px ;
+    border-radius: 10px;
 }
 .fac-col h3,
 .fac-col p {
@@ -326,7 +326,7 @@ header .fas {
 /*start testimonials*/
 .testimonials {
     background-color: #FFF;
-    padding: 5px 0 5%;
+    padding: var(--main-padding);
 }
 .testimonials  h1 {
     font-size: 30px;
