@@ -148,7 +148,7 @@ header .text-box .btn:hover {
 header .fas {
     display: none;
 }
-@media (max-width:700px) {
+@media (max-width:767px) {
     header .text-box h1 {
         font-size: 30px;
     }
@@ -407,7 +407,12 @@ header .fas {
     line-height: 1.6;
 }
 .contact .container .content h1 {
-    margin-bottom: 10%;
+    margin-bottom: 15%;
+}
+@media (max-width:767px) {
+    .contact .container .content h1 {
+        font-size: 20px;
+    }
 }
 .contact .container .content .btn {
     text-decoration: none;
@@ -417,6 +422,11 @@ header .fas {
     background-color:  transparent;
     transition: 0.6s;
     position: relative;
+}
+@media (max-width:767px) {
+    .contact .container .content .btn {
+        padding: 9px 30px;
+    }
 }
 .contact .container .content .btn:hover {
     background-color: var(--main-color);
@@ -431,6 +441,11 @@ header .fas {
     left: -12%;
     transition: 0.6s;
 }
+@media (max-width:767px) {
+    .content .btn::before {
+        width: 38px;
+    }
+}
 .content .btn:hover::before {
     border-color: var(--main-color);
 }
@@ -443,6 +458,11 @@ header .fas {
     bottom: 50%;
     right: -12%;
     transition: 0.6s;
+}
+@media (max-width:767px) {
+    .content .btn::after {
+        width: 38px;
+    }
 }
 .content .btn:hover::after {
     border-color: var(--main-color);
@@ -500,11 +520,23 @@ footer .container .far {
     float: left;
     width: 50%;
 }
+@media (max-width:767px) {
+    .about-us-content .container .content{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
 .about-us-content .container .content h1 {
     margin: 0;
     font-size: 45px;
     margin-bottom: 20px;
     font-weight: 600;
+}
+@media (max-width:767px) {
+    .about-us-content .container .content h1 {
+        font-size: 30px;
+    }
 }
 .about-us-content .container .content p {
     color: #777;
@@ -518,6 +550,14 @@ footer .container .far {
     float: right;
     width: 47%;
     margin-left: 3%;
+}
+@media (max-width:767px) {
+    .about-us-content .container  img {
+        float: none;
+        width: 100%;
+        margin-bottom: 15%;
+        margin-left: 0%;
+    }
 }
 .about-us-content .content .btn {
     text-decoration: none;
@@ -646,6 +686,12 @@ input:focus, textarea:focus {
     margin-left: 24px;
     margin-bottom: 30px;
 }
+@media (max-width:767px) {
+    .blog-content .content form .btn {
+        padding: 9px 25px;
+        margin-left:20%
+    }
+}
 .blog-content .content form .btn:hover {
     background-color: var(--main-color);
     color: var(--paragrah-color);
@@ -660,6 +706,11 @@ input:focus, textarea:focus {
     left: -12%;
     transition: 0.6s;
 }
+@media (max-width:767px) {
+    .blog-content .content form .btn::before {
+        width: 38px;
+    }
+}
 .blog-content .content form .btn:hover::before {
     border-color: var(--main-color);
 }
@@ -672,6 +723,11 @@ input:focus, textarea:focus {
     bottom: 50%;
     right: -12%;
     transition: 0.6s;
+}
+@media (max-width:767px) {
+    .blog-content .content form .btn::after {
+        width: 38px;
+    }
 }
 .blog-content .content form .btn:hover::after {
     border-color: var(--main-color);
@@ -798,8 +854,7 @@ input:focus, textarea:focus {
 }
 @media (max-width:767px) {
     .form .btn {
-        margin-left: 30%;
-        margin-right: 30%;
+        margin-left: 20%;
     }
 }
 .form .btn:hover {
