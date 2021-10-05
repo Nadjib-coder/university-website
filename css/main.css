@@ -19,6 +19,7 @@ html {
 }
 body {
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 ul {
     list-style: none;
